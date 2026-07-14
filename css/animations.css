@@ -1,0 +1,172 @@
+/* Custom Luxury Animations - Athlete Portfolio */
+
+/* Preloader Animation */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes progressLoad {
+    0% { width: 0%; }
+    100% { width: 100%; }
+}
+
+/* Base Reveal States */
+.reveal {
+    opacity: 0;
+    transition: transform var(--transition-slow), opacity var(--transition-slow);
+}
+
+.reveal.reveal-up {
+    transform: translateY(60px);
+}
+
+.reveal.reveal-left {
+    transform: translateX(-60px);
+}
+
+.reveal.reveal-right {
+    transform: translateX(60px);
+}
+
+.reveal.reveal-scale {
+    transform: scale(0.9);
+}
+
+/* Active Class for Triggering Scroll Animations */
+.reveal.active {
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+/* Custom Cursor Effects */
+@keyframes cursorRipple {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3.5);
+        opacity: 0;
+    }
+}
+
+/* Dynamic Glowing Effects */
+@keyframes pulseGreen {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(0, 200, 83, 0.4), inset 0 0 15px rgba(0, 200, 83, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(0, 200, 83, 0.8), inset 0 0 25px rgba(0, 200, 83, 0.4);
+    }
+}
+
+@keyframes pulseGold {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.4), inset 0 0 15px rgba(255, 215, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), inset 0 0 25px rgba(255, 215, 0, 0.4);
+    }
+}
+
+.glow-hover-green:hover {
+    animation: pulseGreen 2s infinite alternate;
+}
+
+.glow-hover-gold:hover {
+    animation: pulseGold 2s infinite alternate;
+}
+
+/* Floating Shapes Animations */
+@keyframes floatShape1 {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
+@keyframes floatShape2 {
+    0%, 100% {
+        transform: translate(0, 0) scale(1);
+    }
+    50% {
+        transform: translate(30px, -30px) scale(1.15);
+    }
+}
+
+.float-item-1 {
+    animation: floatShape1 10s ease-in-out infinite;
+}
+
+.float-item-2 {
+    animation: floatShape2 15s ease-in-out infinite;
+}
+
+/* Typing Caret Animation */
+@keyframes blinkCaret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--clr-secondary); }
+}
+
+/* Infinite Horizontal Scroll for Sponsors */
+@keyframes infiniteScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.infinite-scroll-track {
+    display: flex;
+    width: max-content;
+    animation: infiniteScroll 30s linear infinite;
+}
+
+.infinite-scroll-track:hover {
+    animation-play-state: paused;
+}
+
+/* SVG Blob Animation */
+@keyframes blobMorph {
+    0%, 100% {
+        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+        transform: translate(0, 0) rotate(0deg);
+    }
+    34% {
+        border-radius: 70% 30% 52% 48% / 60% 40% 60% 40%;
+        transform: translate(10px, -20px) rotate(120deg);
+    }
+    67% {
+        border-radius: 50% 50% 30% 70% / 40% 60% 30% 70%;
+        transform: translate(-15px, 15px) rotate(240deg);
+    }
+}
+
+.animated-blob {
+    animation: blobMorph 16s ease-in-out infinite alternate;
+}
+
+/* Page Preloader Ripple */
+@keyframes preloaderRipple {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* Border Glow Animation */
+@keyframes borderGlow {
+    0%, 100% { border-color: rgba(0, 200, 83, 0.3); }
+    50% { border-color: rgba(255, 215, 0, 0.8); }
+}
+
+.border-glow-anim {
+    animation: borderGlow 4s infinite ease-in-out;
+}

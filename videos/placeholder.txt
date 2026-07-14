@@ -1,0 +1,4 @@
+Place your training and cricket highlight videos in this directory.
+File references in index.html:
+- videos/training.mp4
+- videos/cricket.mp4

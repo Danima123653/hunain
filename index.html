@@ -1,0 +1,1344 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    window.addEventListener('error', function(e) {
+        var errorDiv = document.createElement('div');
+        errorDiv.style.position = 'fixed';
+        errorDiv.style.bottom = '10px';
+        errorDiv.style.left = '10px';
+        errorDiv.style.background = 'rgba(255, 0, 0, 0.95)';
+        errorDiv.style.color = 'white';
+        errorDiv.style.padding = '15px';
+        errorDiv.style.borderRadius = '8px';
+        errorDiv.style.zIndex = '999999';
+        errorDiv.style.fontFamily = 'monospace';
+        errorDiv.style.fontSize = '13px';
+        errorDiv.style.maxWidth = '90%';
+        errorDiv.style.wordBreak = 'break-all';
+        errorDiv.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+        errorDiv.innerText = 'JS Error: ' + e.message + '\nFile: ' + e.filename.split('/').pop() + '\nLine: ' + e.lineno;
+        if (document.body) {
+            document.body.appendChild(errorDiv);
+        } else {
+            window.addEventListener('DOMContentLoaded', function() {
+                document.body.appendChild(errorDiv);
+            });
+        }
+    });
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Husnain ul Haq Malik | Pakistan Soft Tennis &amp; Cricket Athlete</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.">
+    <meta name="keywords" content="Muhammad Husnain ul Haq Malik, Soft Tennis Pakistan, Regional Cricket Zone II, New Sangam Cricket Club, Adamjee Government Science College, Athlete Portfolio, Software Developer">
+    <meta name="author" content="Muhammad Husnain ul Haq Malik">
+    <link rel="canonical" href="http://localhost/hunain/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost/hunain/">
+    <meta property="og:title" content="Muhammad Husnain ul Haq Malik | Pakistan Athlete Portfolio">
+    <meta property="og:description" content="Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.">
+    <meta property="og:image" content="images/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://localhost/hunain/">
+    <meta property="twitter:title" content="Muhammad Husnain ul Haq Malik | Pakistan Athlete Portfolio">
+    <meta property="twitter:description" content="Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.">
+    <meta property="twitter:image" content="images/og-image.jpg">
+
+    <!-- Schema Markup (Structured Data) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muhammad Husnain ul Haq Malik",
+      "jobTitle": ["Soft Tennis Player", "Cricketer", "Computer Science Student"],
+      "nationality": "Pakistani",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Adamjee Government Science College"
+      },
+      "memberOf": [
+        {
+          "@type": "SportsOrganization",
+          "name": "Pakistan Soft Tennis Federation"
+        },
+        {
+          "@type": "SportsOrganization",
+          "name": "Regional Cricket Zone II"
+        },
+        {
+          "@type": "SportsOrganization",
+          "name": "New Sangam Cricket Club"
+        }
+      ]
+    }
+    </script>
+
+    <!-- FontAwesome Vector Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css?v=2.2">
+    <link rel="stylesheet" href="css/animations.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/responsive.css?v=2.2">
+</head>
+<body>
+
+    <!-- 1. Custom Preloader Screen -->
+    <div id="preloader">
+        <div class="preloader-logo">M. HUSNAIN<span>.</span></div>
+        <div class="preloader-ring"></div>
+        <div class="preloader-bar-container">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- 2. Ambient Canvas Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- 3. Floating Glow Shapes -->
+    <div class="background-glow-shape glow-shape-1 float-item-1"></div>
+    <div class="background-glow-shape glow-shape-2 float-item-2"></div>
+
+    <!-- 4. Custom Luxury Cursor Elements -->
+    <div class="custom-cursor-dot"></div>
+    <div class="custom-cursor-outline"></div>
+
+    <!-- 5. Header / Navigation Bar -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">HUSNAIN<span>.</span></a>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu-list">
+                <ul class="nav-menu-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#sports" class="nav-link">Sports</a></li>
+                    <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                    <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-controls">
+                <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle Light/Dark Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="scroll-progress-bar"></div>
+    </header>
+
+    <!-- 6. Hero Section -->
+    <section id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal reveal-left">
+                <div class="hero-tag">Official Portfolio</div>
+                <h1 class="hero-title">Muhammad<br><span class="gold-gradient-text">Husnain ul Haq Malik</span></h1>
+                <div class="hero-subtitle">
+                    I am a <span id="typing-text" data-roles='["Soft Tennis Player","Cricketer","Computer Science Student"]'></span>
+                </div>
+                <p class="hero-description">
+                    Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#achievements" class="btn btn-secondary">View Achievements</a>
+                </div>
+                <div class="hero-socials">
+                    <span>Connect</span>
+                    <a href="https://github.com" target="_blank" class="hero-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com" target="_blank" class="hero-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="hero-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" target="_blank" class="hero-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-portrait reveal reveal-right">
+                <div class="portrait-frame">
+                    <div class="portrait-img-wrapper" style="width: 100%; height: 100%; overflow: hidden; border-radius: var(--radius-lg);">
+                        <img src="images/portrait.jpg" alt="Muhammad Husnain ul Haq Malik" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="hero-scroll-indicator">
+            <span>Explore</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </a>
+    </section>
+
+    <!-- 7. About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Biography</span>
+                <h2 class="section-title">About <span>Me</span></h2>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-details reveal reveal-left">
+                    <div class="about-tabs">
+                        <button class="about-tab-btn active" data-tab="journey">Journey</button>
+                        <button class="about-tab-btn" data-tab="mission">Mission</button>
+                        <button class="about-tab-btn" data-tab="vision">Vision</button>
+                    </div>
+                    
+                    <div class="about-tab-panel active" id="tab-journey">
+                        <p>I am Muhammad Husnain ul Haq Malik, a passionate Soft Tennis player, Regional Cricketer, and Computer Science student. I have been playing Soft Tennis for the past two years and recently had the honor of representing Pakistan in an international tournament in South Korea.</p>
+                    </div>
+                    
+                    <div class="about-tab-panel" id="tab-mission">
+                        <p>Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.</p>
+                    </div>
+                    
+                    <div class="about-tab-panel" id="tab-vision">
+                        <div class="about-vision-box">
+                            <h4>Vision</h4>
+                            <p>â€œTo win international medals for Pakistan in Soft Tennis and play cricket at the highest domestic and international levels while leveraging tech to build the future.â€</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details reveal reveal-right">
+                    <div class="luxury-card-glow">
+                        <h3 style="font-family: var(--font-heading); font-size: 22px; margin-bottom: 25px; text-transform: uppercase;">Personal Details</h3>
+                        <div class="about-info-list">
+                            <div class="info-item">
+                                <span>Name</span>
+                                <span>Muhammad Husnain ul Haq Malik</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Nationality</span>
+                                <span>Pakistani ðŸ‡µðŸ‡°</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Education</span>
+                                <span>Adamjee Govt Science College</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Primary Sport</span>
+                                <span>Soft Tennis (International)</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Secondary Sport</span>
+                                <span>Cricket (Regional Zone II)</span>
+                            </div>
+                            <div class="info-item">
+                                <span>Major Focus</span>
+                                <span>Computer Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Education Section -->
+    <section id="education" style="background-color: var(--clr-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Academic Credentials</span>
+                <h2 class="section-title">My <span>Education</span></h2>
+            </div>
+            
+            <div class="edu-timeline reveal reveal-up">
+                <div class="edu-item">
+                    <div class="edu-dot"></div>
+                    <div class="edu-content">
+                        <span class="edu-date">Present Academic</span>
+                        <h3 class="edu-title">Intermediate in Computer Science</h3>
+                        <div class="edu-institution">Adamjee Government Science College</div>
+                        <p class="edu-desc">
+                            Studying core computational sciences, mathematics, physics, and programming foundations. Adamjee College is recognized as one of the premier science institutions, fostering highly academic and competitive students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Sports Career Section -->
+    <section id="sports">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Athletic Endeavors</span>
+                <h2 class="section-title">Sports <span>Career</span></h2>
+            </div>
+            
+            <div class="sports-grid">
+                <div class="sport-card sport-card-tennis reveal reveal-left">
+                    <div class="sport-icon-box">
+                        <i class="fa-solid fa-table-tennis-paddle-ball"></i>
+                    </div>
+                    <h3 class="sport-title">Soft Tennis</h3>
+                    <div class="sport-subtitle">Pakistan Representative</div>
+                    <p class="sport-description">A dedicated Soft Tennis athlete proudly representing Pakistan on the international stage. I have competed in national and international tournaments, continuously striving for excellence while representing my country with pride and determination. My journey has been defined by discipline, resilience, and a commitment to continuous improvement, earning opportunities to compete against top international athletes. Through every match, I aim to inspire others and contribute to the growth of Soft Tennis in Pakistan while pursuing excellence at the highest level.
+                    </p>
+                    <ul class="sport-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i> Pakistan Representative Honors</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 2+ Years Elite Court Experience</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Regular National Competitions</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Daily Court and Tactical Training</li>
+                    </ul>
+                </div>
+                
+                <div class="sport-card sport-card-cricket reveal reveal-right">
+                    <div class="sport-icon-box" style="display: flex; align-items: center; justify-content: center;">
+                        <svg viewBox="0 0 100 100" class="cricket-svg-icon" style="width: 48px; height: 48px; fill: currentColor; display: inline-block;">
+                            <!-- Cricket Ball -->
+                            <path d="M70,80C70,74.475,74.475,70,80,70C85.525,70,90,74.475,90,80C90,85.525,85.525,90,80,90C74.475,90,70,85.525,70,80Z" fill="var(--clr-secondary)" />
+                            <!-- Cricket Bat -->
+                            <path d="M75,10L30,55L31.464,56.464C33.417,58.417,33.417,61.582,31.464,63.535L10,85L15,90L36.464,68.536C38.417,66.583,41.582,66.583,43.535,68.536L45,70L90,25L90,25C88.486,17.431,82.569,11.514,75,10L75,10Z" />
+                        </svg>
+                    </div>
+                    <h3 class="sport-title">Cricket</h3>
+                    <div class="sport-subtitle">Regional Zone II Representative</div>
+                    <p class="sport-description">
+                        A right hand batsman and right-arm leg spinner with experience across competitive clubs and representative cricket. I have represented New Age Global Trading, Skyhawks Cricket Club, Spartan Warriors, 5AsSoft Cricket Club in multi-national and local cricket leagues.currently,I am also representing PCB NEW SAMGAM CRICKET CLUB and Dawood sports Cricket Academy RCAK-II (Regional Cricket Association Karachi)Zone II and participated in the PM Youth Program hosted by the Lahore Qalandars. Through every opportunity, I continue to develop my skills, embrace challenges, and pursue my ambition of representing Pakistan at the highest level
+                    </p>
+                    <ul class="sport-bullets">
+                        <li><i class="fa-solid fa-circle-check"></i> Zone II Regional Representative</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Active Player - New Sangam CC</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Top League Competitive Matches</li>
+                        <li><i class="fa-solid fa-circle-check"></i> High Teamwork & Strategic Discipline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Timeline Story -->
+    <section id="timeline" style="background-color: var(--clr-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Chronology</span>
+                <h2 class="section-title">Career <span>Timeline</span></h2>
+            </div>
+            
+            <div class="timeline-story reveal reveal-up">
+                <div class="timeline-node">
+                    <div class="timeline-panel">
+                        <div class="timeline-year">2024</div>
+                        <h3 class="timeline-title">Began Soft Tennis Career</h3>
+                        <p class="timeline-desc">Embarked on court training under senior coaches, mastering spin dynamics and high-end agility mechanics.</p>
+                    </div>
+                    <div class="timeline-empty"></div>
+                </div>                <div class="timeline-node">
+                    <div class="timeline-panel">
+                        <div class="timeline-year">2021</div>
+                        <h3 class="timeline-title">Professional Cricket Debut</h3>
+                        <p class="timeline-desc">Inducted into Regional Cricket Zone II and New Sangam Cricket Club after outstanding performance in trial games.</p>
+                    </div>
+                    <div class="timeline-empty"></div>
+                </div>                <div class="timeline-node">
+                    <div class="timeline-panel">
+                        <div class="timeline-year">2025</div>
+                        <h3 class="timeline-title">Pakistan Representation</h3>
+                        <p class="timeline-desc">Selected to represent Pakistan in an international Soft Tennis Championship, facing global opponents with pride.</p>
+                    </div>
+                    <div class="timeline-empty"></div>
+                </div>                <div class="timeline-node">
+                    <div class="timeline-panel">
+                        <div class="timeline-year">Future Goals</div>
+                        <h3 class="timeline-title">Tech-Athlete Fusion</h3>
+                        <p class="timeline-desc">Developing digital sports analytics systems while pushing limits on the field and completing computer science studies.</p>
+                    </div>
+                    <div class="timeline-empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Statistics Counter Section -->
+    <section id="statistics">
+        <div class="container statistics-wrapper">
+            <div class="stats-left">
+                <div class="stats-grid">
+                    <div class="stat-card luxury-card-glow reveal reveal-up">
+                        <div class="stat-counter" data-target="2" data-suffix="+">0</div>
+                        <div class="stat-label">Years Court Exp</div>
+                    </div>
+                    <div class="stat-card luxury-card-glow reveal reveal-up">
+                        <div class="stat-counter" data-target="1" data-suffix="">0</div>
+                        <div class="stat-label">Int'l Representations</div>
+                    </div>
+                    <div class="stat-card luxury-card-glow reveal reveal-up">
+                        <div class="stat-counter" data-target="35" data-suffix="+">0</div>
+                        <div class="stat-label">Competitive Matches</div>
+                    </div>
+                    <div class="stat-card luxury-card-glow reveal reveal-up">
+                        <div class="stat-counter" data-target="8" data-suffix="">0</div>
+                        <div class="stat-label">Tech Certifications</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-right reveal reveal-right">
+                <div class="chart-container-glow">
+                    <h3 style="font-family: var(--font-heading); font-size: 16px; margin-bottom: 20px; text-transform: uppercase; color: #fff; border-left: 4px solid var(--clr-primary); padding-left: 12px; letter-spacing: 1px;">Performance Profile</h3>
+                    <div style="position: relative; height: 260px; width: 100%;">
+                        <canvas id="skillsRadarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. Achievements Section -->
+    <section id="achievements">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Accolades & Medals</span>
+                <h2 class="section-title">Key <span>Achievements</span></h2>
+            </div>
+               <div class="achievements-grid">
+                <div class="achievement-card reveal reveal-up">
+                    <div class="achievement-badge"><i class="fa-solid fa-trophy"></i></div>
+                    <h3 class="achievement-title">Pakistan National Colors</h3>
+                    <p class="achievement-desc">The honour of wearing Pakistan’s color the privilege of competing internationally.Representing Pakistan on the international stage is more than a privilege.it’s the greatest honor of my sporting journey.”</p>
+                </div>                <div class="achievement-card reveal reveal-up">
+                    <div class="achievement-badge"><i class="fa-solid fa-award"></i></div>
+                    <h3 class="achievement-title">Cricket Career Highlights</h3>
+                    <p class="achievement-desc">Part of the Lahore Qalandars Player Development Program (PDP), one of Pakistan’s leading high-performance cricket talent development initiatives.<br>                        <br><br><br>                    <br>                    * Representing multinational cricket teams while consistently contributing match-winning performances in highly competitive local and multinational tournaments.<br>                    <br><br><br>                    * Currently training and competing with Future Star Cricket Academy, continuously developing technical skills, match awareness, and overall performance.</p>
+                </div>                <div class="achievement-card reveal reveal-up">
+                    <div class="achievement-badge"><i class="fa-solid fa-medal"></i></div>
+                    <h3 class="achievement-title">Club Cricket</h3>
+                    <p class="achievement-desc">Led New Sangam Cricket Club to tournament finals with key performances with bat and field strategy.<br><br>                        * Representing New Sangam Cricket Club in Pakistan Cricket Board (PCB) Inter-Club Tournaments.<br>                       <br>                    <br><br></p>
+                </div>                <div class="achievement-card reveal reveal-up">
+                    <div class="achievement-badge"><i class="fa-solid fa-medal"></i></div>
+                    <h3 class="achievement-title">Korea Cup 2026</h3>
+                    <p class="achievement-desc">Represented Pakistan in prestigious international Soft Tennis tournament (KOREA CUP 2026) highlighted by securing a 3rd position in a mix team event at the Korea Cup 2026. Consistently competing at the highest level, I have demonstrated resilience, discipline, and a commitment to excellence while proudly representing my country on the international stage.</p>
+                </div>
+            </div>            </div>
+        </div>
+    </section>
+
+    <!-- 13. Skills Section -->
+    <section id="skills" style="background-color: var(--clr-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Proficiencies</span>
+                <h2 class="section-title">My <span>Skills</span></h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Tech / Coding Skills -->
+                <div class="skills-column reveal reveal-left">
+                    <h3><i class="fa-solid fa-code"></i> Coding Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5 / CSS3</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript (ES6)</span>
+                                <span class="skill-pct">80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP / MySQL</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-pct">85%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sports / Athletic Skills -->
+                <div class="skills-column reveal reveal-right">
+                    <h3><i class="fa-solid fa-dumbbell"></i> Sports & Leadership</h3>
+                    <div class="skills-circular-grid">
+                        <div class="skill-circular-card">
+                            <div class="circle-svg-wrapper">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 88) / 100);"></circle>
+                                </svg>
+                                <span class="circle-pct-text">88%</span>
+                            </div>
+                            <div class="skill-circular-label">Soft Tennis</div>
+                        </div>
+                        
+                        <div class="skill-circular-card">
+                            <div class="circle-svg-wrapper">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 85) / 100); stroke: var(--clr-primary);"></circle>
+                                </svg>
+                                <span class="circle-pct-text">85%</span>
+                            </div>
+                            <div class="skill-circular-label">Cricket</div>
+                        </div>
+                        
+                        <div class="skill-circular-card">
+                            <div class="circle-svg-wrapper">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 90) / 100);"></circle>
+                                </svg>
+                                <span class="circle-pct-text">90%</span>
+                            </div>
+                            <div class="skill-circular-label">Discipline</div>
+                        </div>
+                        
+                        <div class="skill-circular-card">
+                            <div class="circle-svg-wrapper">
+                                <svg>
+                                    <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                                    <circle class="circle-fill" cx="50" cy="50" r="40" style="stroke-dashoffset: calc(251.2 - (251.2 * 80) / 100); stroke: var(--clr-primary);"></circle>
+                                </svg>
+                                <span class="circle-pct-text">80%</span>
+                            </div>
+                            <div class="skill-circular-label">Leadership</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. Weekly Training Routine -->
+    <section id="routine" class="routine-section">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Weekly Schedule</span>
+                <h2 class="section-title">Training <span>Routine</span></h2>
+            </div>
+            
+            <div class="routine-tabs reveal reveal-up">
+                <button class="routine-tab-btn active" data-day="weekday">Mon - Wed - Fri</button>
+                <button class="routine-tab-btn" data-day="tuesday">Tue - Thu</button>
+                <button class="routine-tab-btn" data-day="weekend">Sat - Sun</button>
+            </div>
+            
+            <!-- Weekday panel -->
+            <div class="routine-table-panel active reveal reveal-up" id="routine-weekday">
+                <table class="routine-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Target / Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="routine-time">06:00 AM - 08:00 AM</td>
+                            <td class="routine-activity">Cardio & Physical Endurance</td>
+                            <td class="routine-focus">Stamina, HIIT & Footwork Drill</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">03:30 PM - 06:00 PM</td>
+                            <td class="routine-activity">Soft Tennis Net Practice</td>
+                            <td class="routine-focus">Forehand angles, spin serves</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">08:00 PM - 10:00 PM</td>
+                            <td class="routine-activity">Computer Science Coding study</td>
+                            <td class="routine-focus">Data structures & JS development</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Tuesday panel -->
+            <div class="routine-table-panel reveal reveal-up" id="routine-tuesday">
+                <table class="routine-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Target / Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="routine-time">06:30 AM - 08:00 AM</td>
+                            <td class="routine-activity">Core Conditioning</td>
+                            <td class="routine-focus">Agility, strength recovery</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">03:00 PM - 06:00 PM</td>
+                            <td class="routine-activity">Cricket Net Sessions</td>
+                            <td class="routine-focus">Zone II batting depth & fielding drills</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">08:30 PM - 10:30 PM</td>
+                            <td class="routine-activity">Web Project Coding</td>
+                            <td class="routine-focus">Building PHP/MySQL backend applications</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Weekend panel -->
+            <div class="routine-table-panel reveal reveal-up" id="routine-weekend">
+                <table class="routine-table">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Target / Focus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="routine-time">09:00 AM - 12:00 PM</td>
+                            <td class="routine-activity">New Sangam Match Day</td>
+                            <td class="routine-focus">Competitive league match fixtures</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">03:00 PM - 05:00 PM</td>
+                            <td class="routine-activity">Active Recovery & Review</td>
+                            <td class="routine-focus">Physiotherapy, massage, stretching</td>
+                        </tr>
+                        <tr>
+                            <td class="routine-time">07:00 PM - 09:30 PM</td>
+                            <td class="routine-activity">Self-guided study & GitHub contribution</td>
+                            <td class="routine-focus">Open source tools, algorithms</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. Gallery Section -->
+    <section id="gallery" style="background-color: var(--clr-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Media & Certificates</span>
+                <h2 class="section-title">My <span>Gallery</span></h2>
+            </div>
+            
+            <div class="gallery-filters reveal reveal-up">
+                <button class="gallery-filter active" data-filter="all">All</button>
+                <button class="gallery-filter" data-filter="tennis">Soft Tennis</button>
+                <button class="gallery-filter" data-filter="cricket">Cricket</button>
+                <button class="gallery-filter" data-filter="cert">Certificates</button>
+            </div>
+               <div class="gallery-grid reveal reveal-up">
+                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-match-1.jpg">
+                    <img src="images/tennis-match-1.jpg" alt="Husnain playing at 2026 Sunchang Open Soft Tennis Tournament" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Sunchang Open – Court 18 Match</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-team-pakistan.jpg">
+                    <img src="images/tennis-team-pakistan.jpg" alt="Pakistan PAK-1 and PAK-2 team at Sunchang Open" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Team Pakistan – PAK-1 &amp; PAK-2</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-group-photo.jpg">
+                    <img src="images/tennis-group-photo.jpg" alt="Post-match group photo at Sunchang Open 2026" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Post-Match Group Photo</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-doubles-pair.jpg">
+                    <img src="images/tennis-doubles-pair.jpg" alt="Pakistan doubles pair with rackets at Sunchang Open" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Pakistan Doubles Pair</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-court-meeting.jpg">
+                    <img src="images/tennis-court-meeting.jpg" alt="Teams meeting at net during Sunchang Open tournament" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Pre-Match Coin Toss</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-award.jpg">
+                    <img src="images/tennis-korea-cup-award.jpg" alt="Husnain receiving award at 2026 Korea Cup Soft Tennis" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup 2026 – Award Ceremony</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-international-group.jpg">
+                    <img src="images/tennis-international-group.jpg" alt="International soft tennis players group photo Korea" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">International Players Group</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-pak-india-friendship.jpg">
+                    <img src="images/tennis-pak-india-friendship.jpg" alt="Pakistan and India soft tennis players friendship" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Pak-India Sportsmanship</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-indoor-arena.jpg">
+                    <img src="images/tennis-indoor-arena.jpg" alt="Indoor soft tennis arena Korea Cup 2026" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup Indoor Arena</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-match.jpg">
+                    <img src="images/tennis-korea-cup-match.jpg" alt="Husnain PAK-4 at Korea Cup match coin toss" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup – Match Day</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-serve-action.jpg">
+                    <img src="images/tennis-serve-action.jpg" alt="Husnain serving at Court 14 Korea Cup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Serve Action – Court 14</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-doubles-rally.jpg">
+                    <img src="images/tennis-doubles-rally.jpg" alt="Pakistan doubles team rally at Korea Cup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Doubles Rally Action</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-pak4-rally.jpg">
+                    <img src="images/tennis-pak4-rally.jpg" alt="Husnain PAK-4 jersey during match rally" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">PAK-4 In-Match Rally</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-team-huddle.jpg">
+                    <img src="images/tennis-team-huddle.jpg" alt="Pakistan team huddle with official at Korea Cup" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Team Strategy Huddle</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-center-court.jpg">
+                    <img src="images/tennis-center-court.jpg" alt="Pakistan team at Center Court sign Korea Cup 2026" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Center Court – Korea Cup</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-with-japanese-player.jpg">
+                    <img src="images/tennis-with-japanese-player.jpg" alt="Husnain with NTT West Japanese player at tournament" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">With NTT West Player</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-yonex-court.jpg">
+                    <img src="images/tennis-yonex-court.jpg" alt="Husnain at Yonex sponsored court in Korea" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Yonex Court – Pre-Match</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-gear-closeup.jpg">
+                    <img src="images/tennis-gear-closeup.jpg" alt="Soft tennis racket ball and gear on court" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Courtside Gear</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-team-airport.jpg">
+                    <img src="images/tennis-team-airport.jpg" alt="Pakistan Soft Tennis team at Doha airport en route to Korea" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Team Pakistan – Doha Transit</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-pak-team-quaid.jpg">
+                    <img src="images/tennis-pak-team-quaid.jpg" alt="Pakistan Soft Tennis Team room meeting with Quaid-e-Azam portrait in background" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Pakistan Team Room Meeting</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-group.jpg">
+                    <img src="images/tennis-korea-cup-group.jpg" alt="Korea Cup International Soft Tennis Tournament opening ceremony group photo with dignitaries" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup Stage Group Photo</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-blazer-portrait.jpg">
+                    <img src="images/tennis-blazer-portrait.jpg" alt="Muhammad Husnain ul Haq Malik portrait in green Pakistan blazer holding Korea Cup 3rd place trophy certificate" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Blazer Portrait with Trophy</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-portal.jpg">
+                    <img src="images/tennis-korea-cup-portal.jpg" alt="Pakistan team group photo at Nonghyup Bank Incheon Korea Cup portal entrance" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Team Photo at Entrance</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-trophy-detail.jpg">
+                    <img src="images/tennis-korea-cup-trophy-detail.jpg" alt="Close-up detail of 3rd place Mixed Team Event Korea Cup trophy in box" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup Trophy Detail</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-banquet.jpg">
+                    <img src="images/tennis-korea-cup-banquet.jpg" alt="Team Pakistan banquet dinner gala at Korea Cup 2026" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup Dinner Gala</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-stadium-view.jpg">
+                    <img src="images/tennis-stadium-view.jpg" alt="Wide view of the outdoor Soft Tennis stadium court in Korea" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Outdoor Stadium Court</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-court-meeting-2.jpg">
+                    <img src="images/tennis-court-meeting-2.jpg" alt="Pakistan Soft Tennis players discussing strategy at the net with official" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Courtside Strategy Briefing</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-kit-flatlay.jpg">
+                    <img src="images/tennis-kit-flatlay.jpg" alt="Pakistan Soft Tennis official green blazer, jerseys, and accreditation card flatlay on bed" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Official Kit &amp; Blazer flatlay</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-yonex-stance.jpg">
+                    <img src="images/tennis-yonex-stance.jpg" alt="Husnain walking on court in front of Yonex banner" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Court Walk – Yonex Stance</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-korea-cup-stage-screen.jpg">
+                    <img src="images/tennis-korea-cup-stage-screen.jpg" alt="Korea Cup International Soft Tennis Tournament stage screen during opening ceremony" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Korea Cup Opening Stage Screen</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="tennis" data-type="image" data-src="images/tennis-doubles-indoor-court.jpg">
+                    <img src="images/tennis-doubles-indoor-court.jpg" alt="Pakistan doubles team PAK-1 and PAK-2 playing on indoor clay court at Sunchang Open 2026" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Soft Tennis</span>
+                        <h4 class="gallery-title">Doubles Play – Sunchang Open</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cricket" data-type="image" data-src="images/cricket-zone2-team.jpg">
+                    <img src="images/cricket-zone2-team.jpg" alt="Zone II regional cricket team group photo on ground" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cricket</span>
+                        <h4 class="gallery-title">Zone II Regional Team</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cricket" data-type="image" data-src="images/cricket-pm-youth-event.jpg">
+                    <img src="images/cricket-pm-youth-event.jpg" alt="Husnain at PM Youth Program cricket event" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cricket</span>
+                        <h4 class="gallery-title">PM Youth Program Event</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cricket" data-type="image" data-src="images/cricket-regional-team.jpg">
+                    <img src="images/cricket-regional-team.jpg" alt="Regional cricket team group photo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cricket</span>
+                        <h4 class="gallery-title">Regional Cricket Squad</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cricket" data-type="image" data-src="images/cricket-with-qalandar.jpg">
+                    <img src="images/cricket-with-qalandar.jpg" alt="Husnain selfie with Lahore Qalandars PSL player" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cricket</span>
+                        <h4 class="gallery-title">With Lahore Qalandar Star</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cert" data-type="image" data-src="images/cert-korea-cup-trophy.jpg">
+                    <img src="images/cert-korea-cup-trophy.jpg" alt="Korea Cup Soft Tennis 3rd Place Mixed Team Event Trophy" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Certificates</span>
+                        <h4 class="gallery-title">Korea Cup Trophy – 3rd Place</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cert" data-type="image" data-src="images/cert-korea-cup-ceremony.jpg">
+                    <img src="images/cert-korea-cup-ceremony.jpg" alt="Korea Cup International Soft Tennis Tournament Award Ceremony" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Certificates</span>
+                        <h4 class="gallery-title">Korea Cup Award Ceremony</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cert" data-type="image" data-src="images/cert-korea-cup-diploma.jpg">
+                    <img src="images/cert-korea-cup-diploma.jpg" alt="Korea Cup International Soft Tennis Tournament Diploma" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Certificates</span>
+                        <h4 class="gallery-title">Korea Cup Diploma</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>                <div class="gallery-item" data-category="cricket" data-type="image" data-src="images/1783621198_WhatsAppImage2026-07-07at11.32.34PM.jpeg">
+                    <img src="images/1783621198_WhatsAppImage2026-07-07at11.32.34PM.jpeg" alt="national stadium karachi" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-tag">Cricket</span>
+                        <h4 class="gallery-title">national stadium karachi</h4>
+                        <div class="gallery-overlay-btn"><i class="fa-solid fa-expand"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 16. Embedded Videos Section -->
+    <section id="videos">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Footage</span>
+                <h2 class="section-title">Video <span>Highlights</span></h2>
+            </div>
+            
+            <div class="videos-grid reveal reveal-up">
+                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/Korea tennis opening cermony.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">Soft Tennis Opening Ceremony</h4>
+                        <p class="video-desc">Official march-past and team representation of Pakistan during the tournament opening ceremony in Korea.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/!st interview after secured 3 posituion.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">First Interview – 3rd Position Win</h4>
+                        <p class="video-desc">Husnain&#39;s first interview sharing thoughts and experience after securing 3rd position at the international tournament.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/second interview on capital 5.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">Second Interview – Capital TV</h4>
+                        <p class="video-desc">Husnain&#39;s television interview on Capital TV sharing insights on representing Pakistan and promoting Soft Tennis.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/pakistan squad of korea cup.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">Pakistan Squad – Korea Cup</h4>
+                        <p class="video-desc">Highlighting the official Pakistan Soft Tennis squad representing the nation at the Korea Cup.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/training session of korea cup.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">Korea Cup Training Session</h4>
+                        <p class="video-desc">Behind-the-scenes footage of the Pakistan team&#39;s intensive training and court practice sessions in Korea.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/kor vs pak sunchang opens 2026.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">Korea vs Pakistan – Sunchang Open</h4>
+                        <p class="video-desc">Agile rally moments and action highlights from the Korea vs Pakistan match during Sunchang Open 2026.</p>
+                    </div>
+                </div>                <div class="video-card">
+                    <div class="video-player-container">
+                        <video src="videos/3rd position of pak.mp4" controls preload="metadata" style="width: 100%; height: 100%; object-fit: cover;"></video>
+                    </div>
+                    <div class="video-info">
+                        <span class="video-tag">Soft Tennis</span>
+                        <h4 class="video-title">3rd Position Victory Ceremony</h4>
+                        <p class="video-desc">The award presentation ceremony celebrating Team Pakistan securing the 3rd position in the tournament.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 17. Testimonials Section -->
+    <section id="testimonials" style="background-color: var(--clr-bg-alt);">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">Endorsements</span>
+                <h2 class="section-title">Coach & Team <span>Feedback</span></h2>
+            </div>
+            
+            <div class="testimonials-slider reveal reveal-up">
+                <div class="testimonial-slide active">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Husnain has shown incredible grit on the court. His adaptation to high spin speeds is outstanding. He represents Pakistan with immense potential."</p>
+                    <div class="testimonial-author">Senior Soft Tennis Coach</div>
+                    <div class="testimonial-role">National Sports Federation</div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="testimonial-text">"His work ethic is infectious. Whether it's training for a regional tournament or solving a coding challenge, Husnain brings peak discipline."</p>
+                    <div class="testimonial-author">Teammate</div>
+                    <div class="testimonial-role">New Sangam Cricket Club</div>
+                </div>
+            </div>
+            
+            <div class="slider-controls reveal reveal-up">
+                <button class="slider-btn slider-prev-btn" aria-label="Previous Slide"><i class="fa-solid fa-arrow-left"></i></button>
+                <div class="slider-dots">
+                    <div class="slider-dot active"></div>
+                    <div class="slider-dot"></div>
+                </div>
+                <button class="slider-btn slider-next-btn" aria-label="Next Slide"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 18. FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header reveal reveal-up">
+                <span class="section-subtitle">FAQ</span>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+            </div>
+            
+            <div class="faq-accordion reveal reveal-up">
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        How do you balance Computer Science studies with professional sports?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-accordion-panel">
+                        <div class="faq-accordion-content">
+                            Discipline and time-management are core to my daily life. I split my days strictly into morning fitness and physical sessions, evening matches, and late night academic hours.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <button class="faq-accordion-header">
+                        What is the difference between Soft Tennis and Regular Tennis?
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-accordion-panel">
+                        <div class="faq-accordion-content">
+                            Soft tennis uses soft inflatable rubber balls and lighter, more flexible rackets. The spin dynamics, service rules, and tactical positioning have unique profiles compared to hardcourt tennis.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 19. Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container sponsors-slider">
+            <div class="infinite-scroll-track">
+                <div class="sponsor-logo-box">PAK FEDERATION</div>
+                <div class="sponsor-logo-box">SANGAM CC</div>
+                <div class="sponsor-logo-box">ADAMJEE SCIENCE</div>
+                <div class="sponsor-logo-box">ZONE II ATHLETICS</div>
+                <!-- Duplicate for loop scroll wrapper -->
+                <div class="sponsor-logo-box">PAK FEDERATION</div>
+                <div class="sponsor-logo-box">SANGAM CC</div>
+                <div class="sponsor-logo-box">ADAMJEE SCIENCE</div>
+                <div class="sponsor-logo-box">ZONE II ATHLETICS</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 20. Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <div class="resume-box reveal reveal-scale">
+                <div class="resume-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <h3 class="resume-title">Professional Resume</h3>
+                <p class="resume-desc">View a comprehensive summary of my sports rankings, technical software projects, and college certifications in my latest CV document.</p>
+                <!-- Target cv download link -->
+                <a href="cv/Muhammad_Husnain_CV.pdf" download class="btn btn-primary">Download CV / Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 21. Contact Section -->
+    <section id="contact" style="background-color: var(--clr-bg-alt);">
+        <div class="container contact-grid">
+            <div class="contact-info reveal reveal-left">
+                <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact <span>Me</span></h2>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-card-text">
+                        <span>Email Address</span>
+                        <span>m.husnain.malik.athlete@gmail.com</span>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div class="contact-card-text">
+                        <span>WhatsApp Chat</span>
+                        <span>+92 300 1234567</span>
+                    </div>
+                </div>
+                
+                <div class="contact-map-container">
+                    <!-- Stylized Embed Map Karachi, Pakistan -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.067332210878!2d67.04273877609204!3d24.895745144474775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ef4a06d2039%3A0xe54e6063bb790db8!2sAdamjee%20Government%20Science%20College!5e0!3m2!1sen!2spk!4v1700000000000!5m2!1sen!2spk" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper reveal reveal-right">
+                <div id="form-response-msg" class="form-msg"></div>
+                <form id="contact-form" class="contact-form" action="php/contact.php" method="POST">
+                    
+                    <!-- Hidden honey pot field to stop spam bots -->
+                    <div style="display:none;">
+                        <input type="text" name="website_url" value="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group form-group-full">
+                        <label class="form-label" for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" class="form-input" placeholder="Message Subject" required>
+                    </div>
+                    
+                    <div class="form-group form-group-full">
+                        <label class="form-label" for="message">Message</label>
+                        <textarea id="message" name="message" class="form-input" placeholder="Your Message Details" required></textarea>
+                    </div>
+                    
+                    <div class="form-group form-group-full">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 22. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col-about">
+                    <div class="footer-logo">M. HUSNAIN<span>.</span></div>
+                    <p>Dedicated international Pakistan Soft Tennis player, regional cricketer Zone II, and developer mapping technology solutions.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#sports">Sports</a></li>
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Social Channels</h4>
+                    <div class="footer-social-title">Stay Connected</div>
+                    <div class="footer-socials">
+                        <a href="https://github.com" target="_blank" class="hero-social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="hero-social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="hero-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" class="hero-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-copy">&copy; 2026 Muhammad Husnain ul Haq Malik. All rights reserved.</div>
+                <div class="footer-copy">Crafted completely from scratch (Vanilla Stack).</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Back To Top Button -->
+    <button class="back-to-top-btn" aria-label="Back To Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- 23. Custom Lightbox Modal Overlay -->
+    <div id="lightbox-modal">
+        <button class="lightbox-ctrl" id="lightbox-close" aria-label="Close Lightbox"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-ctrl" id="lightbox-prev" aria-label="Previous Media"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="lightbox-content-wrapper">
+            <div class="lightbox-media-box">
+                <img id="lightbox-img" src="" alt="Lightbox Media">
+                <video id="lightbox-video" controls></video>
+            </div>
+            <div id="lightbox-caption"></div>
+        </div>
+        <button class="lightbox-ctrl" id="lightbox-next" aria-label="Next Media"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <!-- JavaScript Scripts -->
+    <script src="js/cursor.js?v=2.2"></script>
+    <script src="js/particles.js?v=2.2"></script>
+    <script src="js/typing.js?v=2.2"></script>
+    <script src="js/counter.js?v=2.2"></script>
+    <script src="js/gallery.js?v=2.2"></script>
+    <script src="js/app.js?v=2.2"></script>
+    
+    <!-- Chart.js CDN & Radar Chart Initialization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const ctx = document.getElementById('skillsRadarChart');
+        if (!ctx) return;
+
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Agility', 'Speed', 'Power', 'Endurance', 'Tactics', 'Technique'],
+                datasets: [{
+                    label: 'Rating',
+                    data: [
+                        90,
+                        85,
+                        80,
+                        88,
+                        92,
+                        87
+                    ],
+                    backgroundColor: 'rgba(0, 200, 83, 0.15)',
+                    borderColor: '#00c853',
+                    borderWidth: 2,
+                    pointBackgroundColor: '#ffd700',
+                    pointBorderColor: '#09090b',
+                    pointBorderWidth: 2,
+                    pointRadius: 4,
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#00c853'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: 'rgba(255, 255, 255, 0.08)'
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.08)'
+                        },
+                        pointLabels: {
+                            color: '#a1a1aa',
+                            font: {
+                                family: 'Inter',
+                                size: 11,
+                                weight: '600'
+                            }
+                        },
+                        ticks: {
+                            color: '#71717a',
+                            backdropColor: 'transparent',
+                            beginAtZero: true,
+                            max: 100,
+                            stepSize: 20,
+                            font: {
+                                size: 9
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: '#121214',
+                        titleColor: '#fff',
+                        bodyColor: '#ffd700',
+                        borderColor: 'rgba(255, 255, 255, 0.08)',
+                        borderWidth: 1,
+                        displayColors: false,
+                        callbacks: {
+                            label: function(context) {
+                                return 'Rating: ' + context.raw + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
+

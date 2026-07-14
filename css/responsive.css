@@ -1,0 +1,342 @@
+/* Mobile First & Responsive Adjustments - Athlete Portfolio */
+
+/* ==========================================================================
+   1. LAPTOPS & WIDE SCREENS (MAX-WIDTH: 1200px)
+   ========================================================================== */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 92%;
+    }
+    
+    #lightbox-prev {
+        left: -40px;
+    }
+    
+    #lightbox-next {
+        right: -40px;
+    }
+}
+
+/* ==========================================================================
+   2. TABLETS & SMALL LAPTOPS (MAX-WIDTH: 992px)
+   ========================================================================== */
+@media screen and (max-width: 992px) {
+    section {
+        padding: 80px 0;
+    }
+    
+    /* Hide custom cursor on mobile/touch screens */
+    .custom-cursor-dot,
+    .custom-cursor-outline {
+        display: none !important;
+    }
+    
+    /* Navigation drawer overlay */
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(300px, 85vw);
+        height: 100vh;
+        background-color: rgba(var(--clr-bg-rgb), 0.98);
+        backdrop-filter: blur(20px);
+        border-left: 1px solid var(--clr-card-border);
+        z-index: 1000;
+        transition: right var(--transition-smooth);
+        padding: 100px 40px;
+        display: block;
+    }
+    
+    .nav-menu.open {
+        right: 0;
+    }
+    
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    
+    /* Hero */
+    #home {
+        padding-top: 120px;
+        padding-bottom: 50px;
+        min-height: auto; /* Allow auto height on mobile if content is long */
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .hero-content {
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: clamp(24px, 8vw, 36px);
+        line-height: 1.25;
+        margin-bottom: 16px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .hero-tag {
+        justify-content: center;
+    }
+    
+    .hero-tag::before {
+        display: none;
+    }
+    
+    .hero-description {
+        margin: 0 auto 35px;
+    }
+    
+    .hero-cta {
+        justify-content: center;
+    }
+    
+    .hero-socials {
+        justify-content: center;
+    }
+    
+    .hero-portrait {
+        order: -1; /* Display picture on top of content on smaller screens */
+    }
+    
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Sports */
+    .sports-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Statistics */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Achievements */
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    /* Videos */
+    .videos-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* ==========================================================================
+   3. MOBILE DEVICES (MAX-WIDTH: 768px)
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    /* Timeline Story */
+    .timeline-story::before {
+        left: 20px;
+    }
+    
+    .timeline-node {
+        flex-direction: row !important;
+        margin-bottom: 40px;
+    }
+    
+    .timeline-node::before {
+        left: 20px;
+        top: 20px;
+    }
+    
+    .timeline-panel {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+    }
+    
+    .timeline-panel::before {
+        left: -10px !important;
+        right: auto !important;
+        border-top: none !important;
+        border-right: none !important;
+        border-bottom: 1px solid var(--clr-card-border) !important;
+        border-left: 1px solid var(--clr-card-border) !important;
+    }
+    
+    .timeline-empty {
+        display: none;
+    }
+    
+    /* Routine table */
+    .routine-table-panel {
+        padding: 20px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .routine-table th,
+    .routine-table td {
+        padding: 12px 14px;
+        font-size: 13px;
+    }
+    
+    .routine-activity {
+        font-size: 13.5px;
+    }
+    
+    /* Lightbox Control buttons overlap protection on smaller screens */
+    #lightbox-prev {
+        left: 15px;
+        bottom: 20px;
+        top: auto;
+        transform: none;
+    }
+    
+    #lightbox-next {
+        right: 15px;
+        bottom: 20px;
+        top: auto;
+        transform: none;
+    }
+    
+    #lightbox-close {
+        top: 15px;
+        right: 15px;
+    }
+    
+    .lightbox-media-box {
+        max-height: 55vh;
+    }
+    
+    .lightbox-media-box img,
+    .lightbox-media-box video {
+        max-height: 55vh;
+    }
+}
+
+/* ==========================================================================
+   4. EXTRA SMALL DEVICES (MAX-WIDTH: 480px)
+   ========================================================================== */
+@media screen and (max-width: 480px) {
+    section {
+        padding: 65px 0;
+    }
+    
+    /* About List Info items */
+    .about-info-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    /* Achievements */
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Statistics */
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Gallery filters */
+    .gallery-filters {
+        gap: 8px;
+    }
+    
+    .gallery-filter {
+        font-size: 11px;
+        padding: 8px 16px;
+    }
+    
+    /* Gallery images */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Skill circulars */
+    .skills-circular-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Form styling */
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group-full {
+        grid-column: span 1;
+    }
+    
+    .contact-form-wrapper {
+        padding: 24px;
+    }
+    
+    /* Footer Bottom alignments */
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* Portrait Image adjustment */
+    .portrait-frame {
+        width: 270px;
+        height: 330px;
+        margin: 0 auto;
+    }
+    
+    .chart-container-glow {
+        padding: 15px;
+    }
+    
+    /* About tabs wrapping and scaling */
+    .about-tabs {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .about-tab-btn {
+        flex: 1 1 auto;
+        font-size: 13px;
+        padding: 8px 12px;
+        text-align: center;
+    }
+}

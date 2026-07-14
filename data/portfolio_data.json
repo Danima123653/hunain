@@ -1,0 +1,447 @@
+{
+    "profile": {
+        "name": "Muhammad Husnain ul Haq Malik",
+        "subtitle": "Pakistan Soft Tennis & Cricket Athlete",
+        "bio_summary": "Representing Pakistan in Soft Tennis internationally, playing competitive cricket in regional leagues, and pursuing Computer Science.",
+        "bio_details": "I am Muhammad Husnain ul Haq Malik, a passionate Soft Tennis player, Regional Cricketer, and Computer Science student. I have been playing Soft Tennis for the past two years and recently had the honor of representing Pakistan in an international tournament in South Korea.",
+        "vision": "To win international medals for Pakistan in Soft Tennis and play cricket at the highest domestic and international levels while leveraging tech to build the future.",
+        "profile_pic": "images/portrait.jpg",
+        "resume_url": "cv/resume.pdf",
+        "contact_email": "husnainmalik.athlete@gmail.com",
+        "phone": "+92 300 1234567",
+        "titles": [
+            "Soft Tennis Player",
+            "Cricketer",
+            "Computer Science Student"
+        ]
+    },
+    "achievements": [
+        {
+            "id": 1,
+            "icon": "fa-solid fa-trophy",
+            "title": "Pakistan National Colors",
+            "description": "The honour of wearing Pakistan\u2019s color the privilege of competing internationally.Representing Pakistan on the international stage is more than a privilege.it\u2019s the greatest honor of my sporting journey.\u201d"
+        },
+        {
+            "id": 2,
+            "icon": "fa-solid fa-award",
+            "title": "Cricket Career Highlights",
+            "description": "Part of the Lahore Qalandars Player Development Program (PDP), one of Pakistan\u2019s leading high-performance cricket talent development initiatives.\n                        <br><br>\n                    \n                    * Representing multinational cricket teams while consistently contributing match-winning performances in highly competitive local and multinational tournaments.\n                    <br><br>\n                    * Currently training and competing with Future Star Cricket Academy, continuously developing technical skills, match awareness, and overall performance."
+        },
+        {
+            "id": 3,
+            "icon": "fa-solid fa-medal",
+            "title": "Club Cricket",
+            "description": "Led New Sangam Cricket Club to tournament finals with key performances with bat and field strategy.\n\n                        * Representing New Sangam Cricket Club in Pakistan Cricket Board (PCB) Inter-Club Tournaments.\n                       \n                    <br><br>"
+        },
+        {
+            "id": 4,
+            "icon": "fa-solid fa-medal",
+            "title": "Korea Cup 2026",
+            "description": "Represented Pakistan in prestigious international Soft Tennis tournament (KOREA CUP 2026) highlighted by securing a 3rd position in a mix team event at the Korea Cup 2026. Consistently competing at the highest level, I have demonstrated resilience, discipline, and a commitment to excellence while proudly representing my country on the international stage."
+        }
+    ],
+    "timeline": [
+        {
+            "id": 1,
+            "year": "2024",
+            "title": "Began Soft Tennis Career",
+            "subtitle": "",
+            "description": "Embarked on court training under senior coaches, mastering spin dynamics and high-end agility mechanics."
+        },
+        {
+            "id": 2,
+            "year": "2021",
+            "title": "Professional Cricket Debut",
+            "subtitle": "",
+            "description": "Inducted into Regional Cricket Zone II and New Sangam Cricket Club after outstanding performance in trial games."
+        },
+        {
+            "id": 3,
+            "year": "2025",
+            "title": "Pakistan Representation",
+            "subtitle": "",
+            "description": "Selected to represent Pakistan in an international Soft Tennis Championship, facing global opponents with pride."
+        },
+        {
+            "id": 4,
+            "year": "Future Goals",
+            "title": "Tech-Athlete Fusion",
+            "subtitle": "",
+            "description": "Developing digital sports analytics systems while pushing limits on the field and completing computer science studies."
+        }
+    ],
+    "gallery": [
+        {
+            "id": 1,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-match-1.jpg",
+            "alt": "Husnain playing at 2026 Sunchang Open Soft Tennis Tournament",
+            "title": "Sunchang Open \u2013 Court 18 Match"
+        },
+        {
+            "id": 2,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-team-pakistan.jpg",
+            "alt": "Pakistan PAK-1 and PAK-2 team at Sunchang Open",
+            "title": "Team Pakistan \u2013 PAK-1 & PAK-2"
+        },
+        {
+            "id": 3,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-group-photo.jpg",
+            "alt": "Post-match group photo at Sunchang Open 2026",
+            "title": "Post-Match Group Photo"
+        },
+        {
+            "id": 4,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-doubles-pair.jpg",
+            "alt": "Pakistan doubles pair with rackets at Sunchang Open",
+            "title": "Pakistan Doubles Pair"
+        },
+        {
+            "id": 5,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-court-meeting.jpg",
+            "alt": "Teams meeting at net during Sunchang Open tournament",
+            "title": "Pre-Match Coin Toss"
+        },
+        {
+            "id": 6,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-award.jpg",
+            "alt": "Husnain receiving award at 2026 Korea Cup Soft Tennis",
+            "title": "Korea Cup 2026 \u2013 Award Ceremony"
+        },
+        {
+            "id": 7,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-international-group.jpg",
+            "alt": "International soft tennis players group photo Korea",
+            "title": "International Players Group"
+        },
+        {
+            "id": 8,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-pak-india-friendship.jpg",
+            "alt": "Pakistan and India soft tennis players friendship",
+            "title": "Pak-India Sportsmanship"
+        },
+        {
+            "id": 9,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-indoor-arena.jpg",
+            "alt": "Indoor soft tennis arena Korea Cup 2026",
+            "title": "Korea Cup Indoor Arena"
+        },
+        {
+            "id": 10,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-match.jpg",
+            "alt": "Husnain PAK-4 at Korea Cup match coin toss",
+            "title": "Korea Cup \u2013 Match Day"
+        },
+        {
+            "id": 11,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-serve-action.jpg",
+            "alt": "Husnain serving at Court 14 Korea Cup",
+            "title": "Serve Action \u2013 Court 14"
+        },
+        {
+            "id": 12,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-doubles-rally.jpg",
+            "alt": "Pakistan doubles team rally at Korea Cup",
+            "title": "Doubles Rally Action"
+        },
+        {
+            "id": 13,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-pak4-rally.jpg",
+            "alt": "Husnain PAK-4 jersey during match rally",
+            "title": "PAK-4 In-Match Rally"
+        },
+        {
+            "id": 14,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-team-huddle.jpg",
+            "alt": "Pakistan team huddle with official at Korea Cup",
+            "title": "Team Strategy Huddle"
+        },
+        {
+            "id": 15,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-center-court.jpg",
+            "alt": "Pakistan team at Center Court sign Korea Cup 2026",
+            "title": "Center Court \u2013 Korea Cup"
+        },
+        {
+            "id": 16,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-with-japanese-player.jpg",
+            "alt": "Husnain with NTT West Japanese player at tournament",
+            "title": "With NTT West Player"
+        },
+        {
+            "id": 17,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-yonex-court.jpg",
+            "alt": "Husnain at Yonex sponsored court in Korea",
+            "title": "Yonex Court \u2013 Pre-Match"
+        },
+        {
+            "id": 18,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-gear-closeup.jpg",
+            "alt": "Soft tennis racket ball and gear on court",
+            "title": "Courtside Gear"
+        },
+        {
+            "id": 19,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-team-airport.jpg",
+            "alt": "Pakistan Soft Tennis team at Doha airport en route to Korea",
+            "title": "Team Pakistan \u2013 Doha Transit"
+        },
+        {
+            "id": 20,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-pak-team-quaid.jpg",
+            "alt": "Pakistan Soft Tennis Team room meeting with Quaid-e-Azam portrait in background",
+            "title": "Pakistan Team Room Meeting"
+        },
+        {
+            "id": 21,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-group.jpg",
+            "alt": "Korea Cup International Soft Tennis Tournament opening ceremony group photo with dignitaries",
+            "title": "Korea Cup Stage Group Photo"
+        },
+        {
+            "id": 22,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-blazer-portrait.jpg",
+            "alt": "Muhammad Husnain ul Haq Malik portrait in green Pakistan blazer holding Korea Cup 3rd place trophy certificate",
+            "title": "Blazer Portrait with Trophy"
+        },
+        {
+            "id": 23,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-portal.jpg",
+            "alt": "Pakistan team group photo at Nonghyup Bank Incheon Korea Cup portal entrance",
+            "title": "Team Photo at Entrance"
+        },
+        {
+            "id": 24,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-trophy-detail.jpg",
+            "alt": "Close-up detail of 3rd place Mixed Team Event Korea Cup trophy in box",
+            "title": "Korea Cup Trophy Detail"
+        },
+        {
+            "id": 25,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-banquet.jpg",
+            "alt": "Team Pakistan banquet dinner gala at Korea Cup 2026",
+            "title": "Korea Cup Dinner Gala"
+        },
+        {
+            "id": 26,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-stadium-view.jpg",
+            "alt": "Wide view of the outdoor Soft Tennis stadium court in Korea",
+            "title": "Outdoor Stadium Court"
+        },
+        {
+            "id": 27,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-court-meeting-2.jpg",
+            "alt": "Pakistan Soft Tennis players discussing strategy at the net with official",
+            "title": "Courtside Strategy Briefing"
+        },
+        {
+            "id": 28,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-kit-flatlay.jpg",
+            "alt": "Pakistan Soft Tennis official green blazer, jerseys, and accreditation card flatlay on bed",
+            "title": "Official Kit & Blazer flatlay"
+        },
+        {
+            "id": 29,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-yonex-stance.jpg",
+            "alt": "Husnain walking on court in front of Yonex banner",
+            "title": "Court Walk \u2013 Yonex Stance"
+        },
+        {
+            "id": 30,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-korea-cup-stage-screen.jpg",
+            "alt": "Korea Cup International Soft Tennis Tournament stage screen during opening ceremony",
+            "title": "Korea Cup Opening Stage Screen"
+        },
+        {
+            "id": 31,
+            "category": "tennis",
+            "type": "image",
+            "src": "images/tennis-doubles-indoor-court.jpg",
+            "alt": "Pakistan doubles team PAK-1 and PAK-2 playing on indoor clay court at Sunchang Open 2026",
+            "title": "Doubles Play \u2013 Sunchang Open"
+        },
+        {
+            "id": 32,
+            "category": "cricket",
+            "type": "image",
+            "src": "images/cricket-zone2-team.jpg",
+            "alt": "Zone II regional cricket team group photo on ground",
+            "title": "Zone II Regional Team"
+        },
+        {
+            "id": 33,
+            "category": "cricket",
+            "type": "image",
+            "src": "images/cricket-pm-youth-event.jpg",
+            "alt": "Husnain at PM Youth Program cricket event",
+            "title": "PM Youth Program Event"
+        },
+        {
+            "id": 34,
+            "category": "cricket",
+            "type": "image",
+            "src": "images/cricket-regional-team.jpg",
+            "alt": "Regional cricket team group photo",
+            "title": "Regional Cricket Squad"
+        },
+        {
+            "id": 35,
+            "category": "cricket",
+            "type": "image",
+            "src": "images/cricket-with-qalandar.jpg",
+            "alt": "Husnain selfie with Lahore Qalandars PSL player",
+            "title": "With Lahore Qalandar Star"
+        },
+        {
+            "id": 36,
+            "category": "cert",
+            "type": "image",
+            "src": "images/cert-korea-cup-trophy.jpg",
+            "alt": "Korea Cup Soft Tennis 3rd Place Mixed Team Event Trophy",
+            "title": "Korea Cup Trophy \u2013 3rd Place"
+        },
+        {
+            "id": 37,
+            "category": "cert",
+            "type": "image",
+            "src": "images/cert-korea-cup-ceremony.jpg",
+            "alt": "Korea Cup International Soft Tennis Tournament Award Ceremony",
+            "title": "Korea Cup Award Ceremony"
+        },
+        {
+            "id": 38,
+            "category": "cert",
+            "type": "image",
+            "src": "images/cert-korea-cup-diploma.jpg",
+            "alt": "Korea Cup International Soft Tennis Tournament Diploma",
+            "title": "Korea Cup Diploma"
+        },
+        {
+            "id": 40,
+            "category": "cricket",
+            "type": "image",
+            "src": "images/1783621198_WhatsAppImage2026-07-07at11.32.34PM.jpeg",
+            "alt": "national stadium karachi",
+            "title": "national stadium karachi"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "category": "tennis",
+            "src": "videos/Korea tennis opening cermony.mp4",
+            "title": "Soft Tennis Opening Ceremony",
+            "description": "Official march-past and team representation of Pakistan during the tournament opening ceremony in Korea."
+        },
+        {
+            "id": 2,
+            "category": "tennis",
+            "src": "videos/!st interview after secured 3 posituion.mp4",
+            "title": "First Interview \u2013 3rd Position Win",
+            "description": "Husnain's first interview sharing thoughts and experience after securing 3rd position at the international tournament."
+        },
+        {
+            "id": 3,
+            "category": "tennis",
+            "src": "videos/second interview on capital 5.mp4",
+            "title": "Second Interview \u2013 Capital TV",
+            "description": "Husnain's television interview on Capital TV sharing insights on representing Pakistan and promoting Soft Tennis."
+        },
+        {
+            "id": 4,
+            "category": "tennis",
+            "src": "videos/pakistan squad of korea cup.mp4",
+            "title": "Pakistan Squad \u2013 Korea Cup",
+            "description": "Highlighting the official Pakistan Soft Tennis squad representing the nation at the Korea Cup."
+        },
+        {
+            "id": 5,
+            "category": "tennis",
+            "src": "videos/training session of korea cup.mp4",
+            "title": "Korea Cup Training Session",
+            "description": "Behind-the-scenes footage of the Pakistan team's intensive training and court practice sessions in Korea."
+        },
+        {
+            "id": 6,
+            "category": "tennis",
+            "src": "videos/kor vs pak sunchang opens 2026.mp4",
+            "title": "Korea vs Pakistan \u2013 Sunchang Open",
+            "description": "Agile rally moments and action highlights from the Korea vs Pakistan match during Sunchang Open 2026."
+        },
+        {
+            "id": 7,
+            "category": "tennis",
+            "src": "videos/3rd position of pak.mp4",
+            "title": "3rd Position Victory Ceremony",
+            "description": "The award presentation ceremony celebrating Team Pakistan securing the 3rd position in the tournament."
+        }
+    ],
+    "skills_stats": {
+        "Agility": 90,
+        "Speed": 85,
+        "Power": 80,
+        "Endurance": 88,
+        "Tactics": 92,
+        "Technique": 87
+    }
+}

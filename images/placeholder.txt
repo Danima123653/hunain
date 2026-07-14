@@ -1,0 +1,6 @@
+Place your athlete portrait, certificates, tennis and cricket gallery photos in this directory.
+File references in index.html:
+- images/portrait.jpg (Hero portrait)
+- images/gallery-tennis-1.jpg
+- images/gallery-cricket-1.jpg
+- images/gallery-cert-1.jpg
